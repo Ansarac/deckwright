@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Observability That Pays for Itself",
+    "layout": "16x9",
+    "author": "deckwright"
+  },
+  "theme": {
+    "bg": "0B1020",
+    "fg": "F4F6FB",
+    "muted": "8A93A6",
+    "primary": "4FD1C5",
+    "secondary": "16203A",
+    "accent": "F6AD55",
+    "fontHead": "Cambria",
+    "fontBody": "Calibri",
+    "motif": "corner"
+  },
+  "slides": [
+    {
+      "layout": "title",
+      "eyebrow": "Platform Engineering",
+      "title": "Observability That Pays for Itself",
+      "subtitle": "Turning raw telemetry into faster incidents, cheaper bills, and calmer on-call"
+    },
+    {
+      "layout": "statGrid",
+      "title": "Where the time and money go today",
+      "stats": [
+        { "value": "47m", "label": "Mean time to detect", "caption": "across P1/P2 incidents last quarter" },
+        { "value": "3.2x", "label": "Log spend growth", "caption": "year over year, mostly debug noise" },
+        { "value": "61%", "label": "Alerts ignored", "caption": "non-actionable or duplicate pages" },
+        { "value": "12", "label": "Dashboards per team", "caption": "few of them ever opened" }
+      ]
+    },
+    {
+      "layout": "iconList",
+      "title": "What good observability actually gives you",
+      "items": [
+        { "icon": "search", "heading": "Find problems faster", "body": "Correlated traces, logs, and metrics in one click instead of five tabs." },
+        { "icon": "bell", "heading": "Alerts you trust", "body": "Symptom-based pages tied to SLOs, not noisy host-level thresholds." },
+        { "icon": "trending-down", "heading": "Lower telemetry bills", "body": "Sample and tier data by value so debug noise stops driving cost." },
+        { "icon": "shield-check", "heading": "Safer releases", "body": "Catch regressions in deploy windows before customers feel them." }
+      ]
+    },
+    {
+      "layout": "process",
+      "title": "How we roll it out in 90 days",
+      "steps": [
+        { "label": "Instrument", "detail": "Auto-instrument top services with OpenTelemetry." },
+        { "label": "Define SLOs", "detail": "Agree error budgets with each product team." },
+        { "label": "Re-tier data", "detail": "Sample, route, and drop low-value telemetry." },
+        { "label": "Rewire alerts", "detail": "Replace host alerts with SLO burn pages." },
+        { "label": "Measure", "detail": "Track MTTD, spend, and page volume monthly." }
+      ]
+    },
+    {
+      "layout": "cards",
+      "title": "Pick the rollout that fits your risk appetite",
+      "cards": [
+        { "heading": "Pilot", "body": "One squad, one critical service. Prove MTTD and cost wins in six weeks with zero platform-wide commitment." },
+        { "heading": "Standard", "body": "A full domain adopts shared instrumentation, SLOs, and golden dashboards. The recommended path for most teams." },
+        { "heading": "Enterprise", "body": "Org-wide rollout with centralized governance, data tiering policy, and an internal enablement program." }
+      ]
+    },
+    {
+      "layout": "section",
+      "number": "02",
+      "title": "Let's instrument your first service this sprint"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build / generated output
+out/
+dist/
+*.tmp
+
+# Rendered QA artifacts (pptx -> pdf -> png)
+.qa/
+*.qa.pdf
+*.qa.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# session handoff (local continuation aid, not shipped)
+HANDOFF.md

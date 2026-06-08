@@ -1,0 +1,50 @@
+{
+  "_comment": "Dev-Doc Light -> Mermaid. base theme + themeVariables, derived from the deck palette (see .claude/skills/slide-designer/reference/themes/dev-doc-light.md). Steel-blue is the dominant heading accent; teal/purple are secondary; warm orange is sparing (notes only). Mono font for diagram labels. Hex only. Per-node semantic colors (success/failure/highlight) live as classDef in the .mmd, not here.",
+  "theme": "base",
+  "fontFamily": "Roboto Mono, Consolas, monospace",
+  "themeVariables": {
+    "darkMode": false,
+    "background": "#FFFFFF",
+    "fontFamily": "Roboto Mono, Consolas, monospace",
+    "fontSize": "16px",
+
+    "primaryColor": "#E1EDF5",
+    "primaryTextColor": "#141414",
+    "primaryBorderColor": "#3A75A0",
+    "secondaryColor": "#E3EEF0",
+    "secondaryTextColor": "#141414",
+    "secondaryBorderColor": "#367883",
+    "tertiaryColor": "#EFEAF2",
+    "tertiaryTextColor": "#141414",
+    "tertiaryBorderColor": "#7C6A93",
+
+    "lineColor": "#3A75A0",
+    "textColor": "#141414",
+    "mainBkg": "#E1EDF5",
+    "nodeBorder": "#3A75A0",
+    "nodeTextColor": "#141414",
+    "titleColor": "#141414",
+    "edgeLabelBackground": "#FFFFFF",
+
+    "clusterBkg": "#F4F7FB",
+    "clusterBorder": "#7C6A93",
+
+    "actorBkg": "#E1EDF5",
+    "actorBorder": "#3A75A0",
+    "actorTextColor": "#141414",
+    "actorLineColor": "#787878",
+    "signalColor": "#141414",
+    "signalTextColor": "#141414",
+    "labelBoxBkgColor": "#E3EEF0",
+    "labelBoxBorderColor": "#367883",
+    "labelTextColor": "#141414",
+    "loopTextColor": "#141414",
+    "activationBkgColor": "#E3EEF0",
+    "activationBorderColor": "#367883",
+    "sequenceNumberColor": "#FFFFFF",
+
+    "noteBkgColor": "#FFF3BF",
+    "noteBorderColor": "#F08C00",
+    "noteTextColor": "#141414"
+  }
+}

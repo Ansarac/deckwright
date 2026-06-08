@@ -1,0 +1,11 @@
+{
+  "$comment": "Declares this repo's external skill dependency so collaborators get it reproducibly WITHOUT vendoring. On clone + workspace-trust, Claude Code registers the marketplace and enables the official document-skills bundle (which contains the `pptx` build toolchain). The plugin files cache in ~/.claude/plugins (never committed here) -- Anthropic's skill license forbids copying them into a repo. Manual fallback: /plugin install document-skills@anthropic-agent-skills",
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": { "source": "github", "repo": "anthropics/skills" }
+    }
+  },
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true
+  }
+}

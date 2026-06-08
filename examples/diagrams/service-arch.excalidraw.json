@@ -1,0 +1,21 @@
+{
+  "_comment": "Dev-Doc Light hand-drawn example with NESTED containers: outer 'Platform' contains an inner dashed 'Services' group plus gateway/datastore; 'Client' sits outside. Containers auto-size to their children. Palette/font/roughness from dev-doc-light.excalidraw.json.",
+  "cards": [
+    { "id": "client",  "x": 40,  "y": 210, "label": "Client",    "fill": "purple" },
+    { "id": "gateway", "x": 250, "y": 210, "label": "Gateway",   "fill": "steel" },
+    { "id": "auth",    "x": 500, "y": 120, "label": "Auth",      "fill": "teal" },
+    { "id": "orders",  "x": 500, "y": 300, "label": "Orders",    "fill": "teal" },
+    { "id": "db",      "x": 770, "y": 210, "label": "Datastore", "fill": "steel" }
+  ],
+  "containers": [
+    { "id": "services", "label": "Services", "children": ["auth", "orders"], "dashed": true },
+    { "id": "platform", "label": "Platform", "children": ["gateway", "services", "db"], "dashed": false }
+  ],
+  "arrows": [
+    { "from": "client",  "to": "gateway", "label": "HTTPS" },
+    { "from": "gateway", "to": "auth" },
+    { "from": "gateway", "to": "orders" },
+    { "from": "auth",    "to": "db" },
+    { "from": "orders",  "to": "db" }
+  ]
+}

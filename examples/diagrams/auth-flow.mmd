@@ -1,0 +1,19 @@
+%% Dev-Doc Light example -- a generic request-authorization flow.
+%% Theme (palette + mono font) is injected by render-mermaid.mjs via
+%% scripts/themes/dev-doc-light.mermaid.json -- keep this file palette-free
+%% EXCEPT for the semantic classDefs (success/failure/highlight), which come
+%% straight from the deck's diagram palette.
+flowchart TD
+    A([Client request]) --> B{Token valid?}
+    B -- yes --> C[Load session]
+    B -- no --> D[Reject 401]:::failure
+    C --> E{Scope allows?}
+    E -- yes --> F([Serve response]):::success
+    E -- no --> G[Reject 403]:::failure
+    D --> H[Log and back off]:::highlight
+    G --> H
+    H --> A
+
+    classDef success fill:#EBFBEE,stroke:#2F9E44,color:#141414;
+    classDef failure fill:#FFC9C9,stroke:#E03131,color:#141414;
+    classDef highlight fill:#FFEC99,stroke:#F08C00,color:#141414;

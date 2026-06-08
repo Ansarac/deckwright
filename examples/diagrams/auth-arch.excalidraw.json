@@ -1,0 +1,16 @@
+{
+  "_comment": "Dev-Doc Light hand-drawn (roughjs) example -- a small request/auth architecture sketch. Palette + font + lightest roughness come from dev-doc-light.excalidraw.json. Hand-placed layout (x/y); fill keys map to the theme's node tints.",
+  "cards": [
+    { "id": "client", "x": 40,  "y": 60,  "label": "Client",       "fill": "teal" },
+    { "id": "gw",     "x": 250, "y": 60,  "label": "API Gateway",  "fill": "blue" },
+    { "id": "auth",   "x": 520, "y": 60,  "label": "Auth Service", "fill": "purple" },
+    { "id": "cache",  "x": 800, "y": 60,  "label": "Token Cache",  "fill": "blue" },
+    { "id": "db",     "x": 520, "y": 230, "label": "User DB",      "fill": "teal" }
+  ],
+  "arrows": [
+    { "from": "client", "to": "gw" },
+    { "from": "gw",     "to": "auth" },
+    { "from": "auth",   "to": "cache", "dashed": true, "label": "check" },
+    { "from": "auth",   "to": "db" }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "Edge AI for Predictive Maintenance",
+    "layout": "16x9",
+    "author": "deckwright"
+  },
+  "theme": {
+    "bg": "0E1116",
+    "fg": "FFFFFF",
+    "muted": "A0A6B0",
+    "primary": "5B8DEF",
+    "secondary": "1F2A44",
+    "accent": "F2C14E",
+    "fontHead": "Georgia",
+    "fontBody": "Calibri"
+  },
+  "slides": [
+    {
+      "layout": "title",
+      "eyebrow": "Industrial IoT",
+      "title": "Edge AI for Predictive Maintenance",
+      "subtitle": "Catching failures before they happen — on the machine, not in the cloud"
+    },
+    {
+      "layout": "section",
+      "number": "01",
+      "title": "Why the cloud round-trip is too slow"
+    },
+    {
+      "layout": "bullets",
+      "title": "The cost of unplanned downtime",
+      "columns": 2,
+      "bullets": [
+        "A single line stoppage can cost $20K–$260K per hour",
+        "Reactive maintenance is 3–5x more expensive than planned work",
+        "Cloud inference adds 200–800ms of latency per reading",
+        "Bandwidth costs scale with every sensor you add",
+        "Connectivity gaps on the plant floor mean missed alerts",
+        "Vibration anomalies can develop in seconds, not minutes"
+      ]
+    },
+    {
+      "layout": "bigNumber",
+      "title": "What inference-at-the-edge buys you",
+      "stat": "73%",
+      "caption": "reduction in unplanned downtime when anomaly detection runs locally on the equipment"
+    },
+    {
+      "layout": "twoColumn",
+      "title": "Cloud-only vs. edge-first",
+      "left": {
+        "heading": "Cloud-only",
+        "bullets": [
+          "Raw telemetry streamed continuously",
+          "Latency tied to network conditions",
+          "Single point of failure on outage",
+          "Recurring egress and compute bills"
+        ]
+      },
+      "right": {
+        "heading": "Edge-first",
+        "bullets": [
+          "Lightweight models run on-device",
+          "Sub-10ms local decisions",
+          "Keeps working when offline",
+          "Only anomalies escalate upstream"
+        ]
+      }
+    },
+    {
+      "layout": "imageText",
+      "title": "Anatomy of an edge node",
+      "body": "A microcontroller-class NPU samples accelerometer and current sensors, runs a quantized anomaly model in a fixed memory budget, and emits a health score every cycle. The gateway aggregates scores and forwards only flagged events.",
+      "image": "examples/assets/edge-node.png"
+    },
+    {
+      "layout": "quote",
+      "quote": "We stopped shipping every byte to the cloud and started shipping decisions. The factory got quieter — and so did the pager.",
+      "attribution": "Reliability Lead, automotive stamping plant"
+    },
+    {
+      "layout": "section",
+      "number": "02",
+      "title": "Getting started in 90 days"
+    }
+  ]
+}

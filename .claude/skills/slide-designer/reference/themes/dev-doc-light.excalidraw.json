@@ -1,0 +1,10 @@
+{
+  "_comment": "Dev-Doc Light -> Excalidraw/roughjs (hand-drawn). Card fills are the deck's node tints (steel/teal/purple); strokes are diagram ink. Labels are Roboto Mono for clarity + coherence with the deck's fonts (see diagram-font decision). roughness is the LIGHTEST hand-drawn setting (restrained, slide-safe). To switch to a true excalidraw handwritten look, set fontFamily to an open handwritten font (Excalifont / Virgil, OFL) -- but a non-mono font breaks the char-count width measure, so add opentype.js or a Chromium measure first.",
+  "ink": "#1E1E1E",
+  "fills": { "steel": "#E1EDF5", "teal": "#E3EEF0", "purple": "#EFEAF2" },
+  "fontFamily": "Roboto Mono, Consolas, monospace",
+  "fontSize": 18,
+  "roughness": 0.5,
+  "bowing": 0.6,
+  "strokeWidth": 1.2
+}
